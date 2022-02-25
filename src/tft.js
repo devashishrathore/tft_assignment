@@ -26,3 +26,16 @@ function addDigit(str) {
     console.log(output)
 }
 addDigit("1S5G11")
+
+// Reduce method
+// input --> "1421" 
+//Output --> 8 
+
+function addStringDigit(str) {
+    let newArr = str.split("").map(Number).filter(x => !isNaN(x))
+    console.log(newArr)
+    let a = newArr.reduce((acc, current) => acc + current, 0)
+    console.log(a);
+}
+addStringDigit("1S5G11")
+
